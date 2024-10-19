@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+
+ h1{
+    text-align: center; 
+    color: #3c9e53;
+ }
+
+
+
+
+
+
+
+  /*Flexbox to navigate different financial literacy clubs, abouts, */
+.siteHeader {
+    display: flex;
+    background-color: #3c9e53;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navItem {
+    margin: 0 15px; 
+}
+
+.navItem a{
+    color: white; 
+    text-decoration: none;
+    padding: 10px 15px; 
+    transition: background-color 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #555; 
+    border-radius: 5px; 
+}
+
+/*This makes the flexbox responsive*/
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
